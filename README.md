@@ -128,7 +128,7 @@ PortalTakeHome/
 ├─ backend/
 │ ├─ app.py # Flask entry point
 │ ├─ ml_module.py # ML logic with Replicate
-│ ├─ prompts.json # Contains your prompt text
+│ ├─ prompts.json # Contains prompts
 │ ├─ requirements.txt # Python dependencies
 │ ├─ .env # Environment variables (excluded from Git)
 │ └─ venv/ # (optional) Python virtual environment
@@ -144,6 +144,6 @@ PortalTakeHome/
 └─ README.md # This file
 ```
 
-- backend/app.py: Your main Flask application.
+- backend/app.py: Flask application.
 - backend/ml_module.py: Contains the generate_creative function that calls Replicate.
 - frontend/src/App.js: The main React component with the form and image display.
