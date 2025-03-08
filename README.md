@@ -69,7 +69,7 @@ A **two-part** project (React frontend + Flask backend) that generates AI-driven
    - cd backend
    - python -m venv venv
    - source venv/bin/activate # For Linux/macOS
-   - # or venv\Scripts\activate for Windows
+   - or venv\Scripts\activate for Windows
    - pip install -r requirements.txt
 
 3. **Frontend Setup**
@@ -80,7 +80,7 @@ A **two-part** project (React frontend + Flask backend) that generates AI-driven
 
 You’ll need a .env file in the backend/ folder with the following (or set them in your environment):
 
-- REPLICATE_API_TOKEN=<your replicate api token>
+- REPLICATE_API_TOKEN= api_token
 - PORT=5000
 - REPLICATE_API_TOKEN: Your secret token from Replicate.
 - PORT: The port Flask will run on (defaults to 5000 if not specified).
@@ -123,6 +123,7 @@ For the frontend, create a .env in the frontend/ directory with:
 
 ## Project Structure
 
+```bash
 PortalTakeHome/
 ├─ backend/
 │ ├─ app.py # Flask entry point
@@ -141,6 +142,7 @@ PortalTakeHome/
 │ └─ .env # Frontend environment variables (excluded from Git)
 ├─ .gitignore
 └─ README.md # This file
+```
 
 - backend/app.py: Your main Flask application.
 - backend/ml_module.py: Contains the generate_creative function that calls Replicate.
